@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 41</title>
+        <link rel="stylesheet" href="../css/chap1.css">
+        <link rel="icon" href="../img/hauntedhouse.ico" type="image/icon type">
+        <audio id="bones" src="../sound/bones.mp3" preload="auto"></audio>
+    </head>
+    <body>
+        <header>
+            <img id = "logo" src="../img/hauntedhouse.png" alt="logo"/>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Le livre dont vous êtes le héro</h2>
+        </header>
+        <ul class = "menu">
+            <p>Sommaire :</p>
+            <li> <a href="./index.html">Accueil</a></li>	
+            <li> <a href="./regles.html">Règles</a></li>
+            <li> <a href="./intro.html">Introduction</a></li>
+            <li> <a href="./p1.html">Début aventure</a></li> <li> <a href="./alllvl.html">Tous les paragraphes</a></li>
+        </ul>
+        <h2>41 </h2>
+        <div id="p1"><p>
+            En commençant par le coin le plus éloigné de la pièce, vous ouvrez les placards. Le
+            premier est une espèce de garde-robe : des robes et des chemisiers sont, en effet, pendus
+            dedans. Vous ouvrez la deuxième porte, et la terreur que vous éprouvez alors vous fait
+            bondir en arrière. Car dans ce placard, se tiennent deux SQUELETTES à demi vêtus de
+            guenilles. Vous les avez certainement dérangés en ouvrant la porte, car vous les voyez
+            reprendre vie, et avancer vers vous pour vous attaquer.</p>
+            <p><img src="../img/index-25_1.png" id="manoir"/></p> 
+        <p>Ajoutez 2 points à votre total de PEUR. Si vous êtes toujours vivant, il va vous falloir
+            combattre ces deux Squelettes chacun à son tour.
+            </p>
+        <table>
+            <tr><td></td><td>HABILETÉ</td><td>ENDURANCE</td></tr>
+            <tr><td>Premier
+                SQUELETTE</td><td>6</td><td>6</td></tr>
+            <tr><td>Deuxième
+                SQUELETTE </td><td>7</td><td>6</td></tr>
+        </table>
+        <p>Si vous êtes vainqueur, vous pouvez  <a href="p338.html">continuer à explorer la pièce</a>,
+            ou  <a href="p243.html">la quitter</a>.
+            </p> 
+         </div> <footer><h1> Copyright </h1><p>- @ 1984 - Steve Jackson</p><p>- Illustrateur:    Tim Sell</p><p>- Éditeur: 	Gallimard</p></footer>
+        <script>
+            var manoir = document.getElementById('manoir'),
+        bones = document.getElementById('bones'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        
+        
+        manoir.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+        
+        manoir.addEventListener('mouseleave', function() {
+        }, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 126</title>
+        <link rel="stylesheet" href="../css/chap1.css">
+        <link rel="icon" href="../img/hauntedhouse.ico" type="image/icon type">
+        <audio id="ghoul" src="../sound/ghoul.mp3" preload="auto"></audio>
+    </head>
+    <body>
+        <header>
+            <img id = "logo" src="../img/hauntedhouse.png" alt="logo"/>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Le livre dont vous êtes le héro</h2>
+        </header>
+        <ul class = "menu">
+            <p>Sommaire :</p>
+            <li> <a href="./index.html">Accueil</a></li>	
+            <li> <a href="./regles.html">Règles</a></li>
+            <li> <a href="./intro.html">Introduction</a></li>
+            <li> <a href="./p1.html">Début aventure</a></li> <li> <a href="./alllvl.html">Tous les paragraphes</a></li>
+        </ul>
+        <h2>126 </h2>
+        <div id="p1"><p>
+            <p>Vous saisissez la poignée de la porte que vous ouvrez en grand. Mais la vision qui s'offre
+                à vous vous fait reculer d'horreur. A l'intérieur du placard, immobile, se tient une forme
+                hideuse couverte de guenilles. Son visage et ses mains sont à moitié pourris, et la
+                pestilence qui en émane vous fait chanceler.</p> 
+            <p><img src="../img/index-52_1.png" id="manoir"/></p>
+            <p>Ses yeux s'ouvrent et sa gorge émet un abominable gargouillement, tandis que sa langue
+                répugnante s'agite dans votre direction. La créature s'avance alors vers vous. Vous
+                ajoutez 2 points à votre total de PEUR, et si vous êtes toujours en vie, vous allez devoir
+                combattre cette GOULE. Vous pouvez saisir un des couteaux accrochés au mur, et
+            l'utiliser comme une ARME. Dans ce cas, ajoutez 3 points à votre total d'HABILETÉ.</p> 
+        <table>
+            <th><td>HABILETÉ</td><td>ENDURANCE</td></th>
+            <tr><td>GOULE</td><td> 8</td><td> 7</td></tr>
+        </table>
+        <p><a href="p186.html">Dès que la Goule vous aura infligé deux blessures</a> .</p>
+        <p><a href="p29.html"> Si vous       êtes vainqueur</a> .</p>
+         </div> <footer><h1> Copyright </h1><p>- @ 1984 - Steve Jackson</p><p>- Illustrateur:    Tim Sell</p><p>- Éditeur: 	Gallimard</p></footer>
+        <script>
+            var manoir = document.getElementById('manoir'),
+        ghoul = document.getElementById('ghoul'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        
+        
+        manoir.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+        
+        manoir.addEventListener('mouseleave', function() {
+        }, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 56</title>
+        <link rel="stylesheet" href="../css/chap1.css">
+        <link rel="icon" href="../img/hauntedhouse.ico" type="image/icon type">
+        <audio id="zombie" src="../sound/zombie.mp3" preload="auto"></audio>
+    </head>
+    <body>
+        <header>
+            <img id = "logo" src="../img/hauntedhouse.png" alt="logo"/>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Le livre dont vous êtes le héro</h2>
+        </header>
+        <ul class = "menu">
+            <p>Sommaire :</p>
+            <li> <a href="./index.html">Accueil</a></li>	
+            <li> <a href="./regles.html">Règles</a></li>
+            <li> <a href="./intro.html">Introduction</a></li>
+            <li> <a href="./p1.html">Début aventure</a></li> <li> <a href="./alllvl.html">Tous les paragraphes</a></li>
+        </ul>
+        <h2>56 </h2>
+        <div id="p1"><p>
+            <p><img src="../img/index-29_1.png" id = "manoir"/></p>
+            <p>Alors que le combat vient de s'engager, vous constatez que l'homme n'est pas plié en
+                deux. Vous avez affaire à un BOSSU.
+                </p> 
+            <table>
+                <th><td>HABILETÉ</td><td>ENDURANCE</td></th>
+                <tr><td>BOSSU</td><td> 7</td><td> 7</td></tr>
+            </table>
+            <p><a href="p72.html">Après trois Assauts.</a></p>
+         </div> <footer><h1> Copyright </h1><p>- @ 1984 - Steve Jackson</p><p>- Illustrateur:    Tim Sell</p><p>- Éditeur: 	Gallimard</p></footer>
+        <script>
+            var manoir = document.getElementById('manoir'),
+        zombie = document.getElementById('zombie'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        
+        
+        manoir.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+        
+        manoir.addEventListener('mouseleave', function() {
+        }, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 71</title>
+        <link rel="stylesheet" href="../css/chap1.css">
+        <link rel="icon" href="../img/hauntedhouse.ico" type="image/icon type">
+        <audio id="goat" src="../sound/goat.mp3" preload="auto"></audio>
+    </head>
+    <body>
+        <header>
+            <img id = "logo" src="../img/hauntedhouse.png" alt="logo"/>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Le livre dont vous êtes le héro</h2>
+        </header>
+        <ul class = "menu">
+            <p>Sommaire :</p>
+            <li> <a href="./index.html">Accueil</a></li>	
+            <li> <a href="./regles.html">Règles</a></li>
+            <li> <a href="./intro.html">Introduction</a></li>
+            <li> <a href="./p1.html">Début aventure</a></li> <li> <a href="./alllvl.html">Tous les paragraphes</a></li>
+        </ul>
+        <h2>71 </h2>
+        <div id="p1"><p>
+            Vous ouvrez la porte, et vous jetez un coup d'œil à l'intérieur de la pièce. Le sol est
+            couvert de poussière et les murs taillés dans le roc sont nus. Une table en bois grossier et
+            une chaise sont poussées contre l'un des murs et, assis à cette table, vous voyez un petit
+            homme à l'aspect tourmenté vêtu d'une toge blanche. Une tête de bouc est posée devant
+            lui.
+            </p>
+            <p><img src="../img/index-34_1.png" id="manoir"/></p> 
+        <p>« Bonjour, dit-il nerveusement, Salut au Maître. Je suis prêt à me repentir. Où en est la
+            cérémonie ? Et, hum... est-ce mon tour maintenant ? » Il se penche alors vers vous et
+            vous murmure : « Je ne suis pas pauvre. Aidez-moi à m'échapper de ce lieu et vous serez
+            très généreusement récompensé.» Qu'allez-vous faire ? Allez-vous 
+            <a href="p214.html">lui dire qui vous êtes</a>  ou 
+            <a href="p334.html">le laisser continuer à parler sans manifester la moindre émotion</a>  ?
+            </p>
+            
+         </div> <footer><h1> Copyright </h1><p>- @ 1984 - Steve Jackson</p><p>- Illustrateur:    Tim Sell</p><p>- Éditeur: 	Gallimard</p></footer>
+        <script>
+            var manoir = document.getElementById('manoir'),
+        goat = document.getElementById('goat'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        
+        
+        manoir.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+        
+        manoir.addEventListener('mouseleave', function() {
+        }, false);
+        </script>
+    </body>
+</html>

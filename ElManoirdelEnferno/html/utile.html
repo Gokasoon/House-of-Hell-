@@ -1,0 +1,38 @@
+
+BUTTON
+<button><a href="p.html" id="a_bouton">Chapitre suivant</a></button>
+
+TABLE
+<th><td>HABILETÉ</td><td>ENDURANCE</td></th>
+
+<li> <a href="./regles.html">Règles</a></li>
+
+
+
+
+
+
+
+
+
+<audio id="rain" src="../sound/rain.mp3" preload="auto"></audio>
+
+<script>
+    var manoir = document.getElementById('manoir'),
+rain = document.getElementById('rain'),
+audios = document.querySelectorAll('audio');
+console.log(audios);
+
+
+manoir.addEventListener('mouseover', function() {
+[].forEach.call(audios, function(audio) {
+// do whatever
+audio.play();
+});
+}, false);
+
+manoir.addEventListener('mouseleave', function() {
+rain.pause();
+rain.currentTime = 0;
+}, false);
+</script>

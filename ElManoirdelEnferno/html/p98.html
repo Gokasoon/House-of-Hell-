@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 98</title>
+        <link rel="stylesheet" href="../css/chap1.css">
+        <link rel="icon" href="../img/hauntedhouse.ico" type="image/icon type">
+        <audio id="falling" src="../sound/falling.mp3" preload="auto"></audio>
+    </head>
+    <body>
+        <header>
+            <img id = "logo" src="../img/hauntedhouse.png" alt="logo"/>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Le livre dont vous êtes le héro</h2>
+        </header>
+        <ul class = "menu">
+            <p>Sommaire :</p>
+            <li> <a href="./index.html">Accueil</a></li>	
+            <li> <a href="./regles.html">Règles</a></li>
+            <li> <a href="./intro.html">Introduction</a></li>
+            <li> <a href="./p1.html">Début aventure</a></li> <li> <a href="./alllvl.html">Tous les paragraphes</a></li>
+        </ul>
+        <h2>98 </h2>
+        <div id="p1"><p>
+            Vous poussez la porte avec précaution tout d'abord, mais, comme il règne dans la pièce
+            l'obscurité la plus totale, vous l'ouvrez en grand. Aaaïïeeee ! Vous poussez un hurlement
+            de terreur, car un corps vient de dégringoler sur votre tête ! Le cadavre est celui d'un vieil
+            homme et, à en juger par l'expression figée de son visage, son agonie n'a pas dû être de
+            tout repos.</p>
+            <p><img src="../img/index-43_1.png" id="manoir"/></p>
+        <p>Ajoutez 3 points à votre total de PEUR pour cette macabre rencontre et, si vous êtes
+            toujours vivant, la panique vous fait bondir hors de cette pièce.</p>
+            <button><a href="p374.html" id="a_bouton">Chapitre suivant</a></button>
+         </div> <footer><h1> Copyright </h1><p>- @ 1984 - Steve Jackson</p><p>- Illustrateur:    Tim Sell</p><p>- Éditeur: 	Gallimard</p></footer>
+        <script>
+            var manoir = document.getElementById('manoir'),
+            falling = document.getElementById('falling'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        
+        
+        manoir.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+        
+        manoir.addEventListener('mouseleave', function() {
+        }, false);
+        </script>
+    </body>
+</html>
